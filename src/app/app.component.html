@@ -1,16 +1,16 @@
 <div class="container">
   <div class="row mt-4">
-    <h1 class="text-center">Kerala Tourism</h1><hr> 
+    <h1 class="text-center">Spurious Store</h1><hr> 
   </div>
-  <div class="row mt-4">
-    @for (item of districts; track $index) {  
-        <div class="col-6 mt-5">
-          <div class="card text-center round" style="width: 40rem; height: 40rem;">
+  <div class="row mt-4 d-flex">
+    @for (item of data; track $index) {  
+        <div class="col-12 col-sm-6 col-md-3 mt-5">
+          <div class="card text-center round" style="width: 18rem;">
             <img src={{item.image}} alt="..." class="round">
             <div class="card-body">
               <h5 class="card-title">{{item.title}}</h5>
-              <p class="card-text">{{item.desc}}</p>
-              <a href="#" class="btn button-57 mt-auto"><span class="text">Plan</span><span>Visit</span></a>
+              <p class="card-text" style="font-size: small;">{{item.description}}</p>
+              <a href="#" class="btn button-57 mt-auto"><span class="text">${{item.price}}</span><span>Buy</span></a>
             </div>
           </div>
         </div>
