@@ -116,3 +116,9 @@ h2.cont{
   color: white;
   text-align: center;
 }
+.card{
+  transition: all 0.6s ease-in-out;
+}
+.card:hover{
+  scale: 1.04;
+}

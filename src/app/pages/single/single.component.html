@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-6">
+            <img src="{{data.image}}" class="round" style="height: 400px; width: 500px;">
+        </div>
+        <div class="col-6">
+            <div class="card" style="width: 100%; height: 100%;">
+                <div class="card-body">
+                  <h2 class="card-title">{{data.title}}</h2>
+                  <p class="card-text mt-5">{{data.description}}</p>
+                  <p> <span style="font-weight: bold;">Rating</span> {{data.rating.rate}}</p>
+                  <h3 class="card-title">${{data.price}}</h3>
+                  <a href="#" class="btn btn-secondary mt-5" style="width: 200px;">Buy Now</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
